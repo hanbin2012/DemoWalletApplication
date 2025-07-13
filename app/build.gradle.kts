@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    kotlin("kapt") version "2.2.0"
 }
 
 android {
@@ -53,6 +54,8 @@ dependencies {
     implementation(libs.refresh.header)
     //glide
     implementation(libs.glide)
+    //noinspection KaptUsageInsteadOfKsp
+    kapt(libs.glide.compiler)
     implementation(libs.okhttp)
     implementation(libs.gson)
     implementation(libs.ktx)

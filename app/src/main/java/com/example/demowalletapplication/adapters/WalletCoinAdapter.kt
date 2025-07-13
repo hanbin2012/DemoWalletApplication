@@ -79,14 +79,15 @@ class WalletCoinAdapter(private var dataList: List<WalletItemShowBean>) :
                 .load(data.coinUrl)
                 .placeholder(R.mipmap.logo)
                 .transform(CircleCrop())
-                .listener(object : RequestListener<Drawable>{
+                .listener(object : RequestListener<Drawable> {
                     override fun onLoadFailed(
                         e: GlideException?,
                         model: Any?,
                         target: Target<Drawable>,
                         isFirstResource: Boolean
                     ): Boolean {
-                        Log.e("GLIDE_ERROR", "加载失败", e);
+                        Log.e("hanbin", "url=${data.coinUrl}")
+                        Log.e("GLIDE_ERROR", "加载失败", e)
                         return false;
                     }
 
@@ -97,10 +98,10 @@ class WalletCoinAdapter(private var dataList: List<WalletItemShowBean>) :
                         dataSource: DataSource,
                         isFirstResource: Boolean
                     ): Boolean {
-                       return true
+                        return true
                     }
                 })
-               .into(itemViewBinding.ivCoin)
+                .into(itemViewBinding.ivCoin)
             itemViewBinding.tvCoinName.text = data.coinName
             val tvCoinAmountString = "${data.coinAmount} ${data.coinSymbol}"
             itemViewBinding.tvCoinAmount.text = tvCoinAmountString

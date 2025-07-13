@@ -26,6 +26,7 @@ androidx-constraintlayout = { group = "androidx.constraintlayout", name = "const
 refresh-layout = { group = "io.github.scwang90", name = "refresh-layout-kernel", version.ref = "refresh" }
 refresh-header = { group = "io.github.scwang90", name = "refresh-header-classics", version.ref = "refresh" }
 glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+glide-compiler = { group = "com.github.bumptech.glide", name = "compiler", version.ref = "glide" }
 gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
 ktx = { group = "androidx.activity", name = "activity-ktx", version.ref = "ktx" }
 okhttp = { group = "com.github.bumptech.glide", name = "okhttp3-integration", version.ref = "okhttp" }

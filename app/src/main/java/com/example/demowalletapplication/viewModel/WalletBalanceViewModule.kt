@@ -1,6 +1,5 @@
 package com.example.demowalletapplication.viewModel
 
-import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.demowalletapplication.beans.ExchangeRateBean
@@ -70,7 +69,6 @@ class WalletBalanceViewModule : ViewModel() {
                                     BigDecimal(currencyInfo.rate)
                         totalBigDecimal += balance
                         val realShowBalance = balance.setScale(2, RoundingMode.HALF_DOWN)
-                       Log.e("hanbin",this.colorful_image_url)
                         walletCoinList.add(
                             WalletItemShowBean(
                                 coinId = this.coin_id,

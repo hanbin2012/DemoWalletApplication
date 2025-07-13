@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DemoWalletApplication</string>
+    <string name="setting">Setting</string>
+    <string name="scan">Scan</string>
+    <string name="bland">CRYPTO.COM</string>
+    <string name="wallet">DEFI WALLET</string>
+</resources>
